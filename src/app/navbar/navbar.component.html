@@ -1,0 +1,46 @@
+<!-- navbar.component.html -->
+<nav [ngClass]="navbarClasses" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Solde à gauche -->
+        <div class="d-flex flex-column align-items-center">
+            <span>1000$ </span>
+            <i class="fas fa-wallet"></i>
+        </div>
+
+        <!-- Trois icônes au milieu -->
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center mx-4">
+                <a href="profil.html" class="text-decoration-none text-dark d-flex flex-column align-items-center">
+                    <i class="fas fa-user fa-2x"></i>
+                    <span>Profil</span>
+                </a>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-4">
+                <a href="securite.html" class="text-decoration-none text-dark d-flex flex-column align-items-center">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <span>Sécurité</span>
+                </a>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-4">
+                <a href="support.html" class="text-decoration-none text-dark d-flex flex-column align-items-center">
+                    <i class="fas fa-question-circle fa-2x"></i>
+                    <span>Support</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Deux icônes à droite avec le theme toggle -->
+        <div class="d-flex justify-content-end">
+            <div class="d-flex flex-column align-items-center mx-4 theme-toggle" (click)="toggleTheme()">
+                <div *ngIf="currentTheme === 'light'" class="btn btn-link">
+                    <i class="fas fa-moon"></i>
+                    Dark Mode
+                </div>
+                <div *ngIf="currentTheme === 'dark'" class="btn btn-link">
+                    <i class="fas fa-sun"></i>
+                    Light Mode
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,52 @@
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .d-flex {
+  display: flex;
+}
+
+.navbar .d-flex > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.navbar i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.navbar-light a,
+.navbar-light span,
+.navbar-light i {
+  color: #000 !important;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.navbar-dark a,
+.navbar-dark span,
+.navbar-dark i {
+  color: #fff !important;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 10px;
+}
